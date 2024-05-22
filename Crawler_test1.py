@@ -4,11 +4,6 @@ Created on Wed May 22 12:07:30 2024
 
 @author: Brian
 """
-import tqdm
-import pandas
-import requests
-import urllib3
-
 
 from tqdm import tqdm
 import pandas as pd
