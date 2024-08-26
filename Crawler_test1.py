@@ -211,7 +211,7 @@ def parse_and_merge_data():
     f.close()
     """
 
-def seperate_abnormal_and_normal():
+def separate_abnormal_and_normal():
     data = pd.read_csv("result/id_A.csv", sep=",")
     data["patent_id"] = data["patent_id"].astype(str)
     no_result = data[data.isnull().any(axis=1)]
@@ -229,4 +229,4 @@ if __name__ == "__main__":
     #save_result_page()  # fetch all request which contained id
     parse_and_merge_data() # parse and merge all html files
 
-    # seperate_abnormal_and_normal()# split normal and abnormal id
+    # separate_abnormal_and_normal()# split normal and abnormal id
